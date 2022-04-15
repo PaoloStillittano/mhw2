@@ -1,0 +1,82 @@
+body h1{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+}
+
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.choice-grid div{
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 32.5%;
+    box-sizing: border-box;
+}
+
+button.hide{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+button{
+    background-color: #cecece;
+    height: 50px;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+button:hover{
+    background-color: #e0e0e0;
+}
+
+.choice-grid .checked{
+    background-color: #cfe3ff;
+    opacity: 1;
+}
+
+.choice-grid .unchecked{
+    background-color: #f4f4f4;
+    opacity: 0.6;
+}
+
+footer{
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+footer p{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 700px) {
+    article{
+      width: 95%;
+      font-size: 12px;
+    }
+    header div span{
+        display: none;
+    }
+  }
+
+  @media (max-width: 500px){
+    .choice-grid div{
+        width: 49%;
+        box-sizing: border-box;
+    }
+  }
